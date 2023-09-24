@@ -1,0 +1,25 @@
+GET http://localhost:3001/appointments
+
+###
+
+POST http://localhost:3001/appointments/new
+Content-Type: application/json
+
+{
+    "title": "trip",
+    "attendees": "me",
+    "endDate": "2023-09-22T23:34",
+    "startDate": "2023-09-29T23:34"
+}
+
+###
+
+DELETE http://localhost:3001/appointments/delete/650d5c20b6df5e0bf7226c74
+
+###
+PUT http://localhost:3001/appointments/update/650d5c20b6df5e0bf7226c74
+Content-Type: application/json
+
+{
+    "title" : "new title lalala"
+}
